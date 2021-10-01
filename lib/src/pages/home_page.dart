@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget{
   
-  final _estiloTexto = new TextStyle (fontSize: 25);
-  int _contador = 0;
+  final estiloTexto = new TextStyle (fontSize: 25);
+  int contador = 0;
   
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,8 @@ class HomePage extends StatelessWidget{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Numeros de clicks: ", style:  _estiloTexto),
-            Text("$_contador", style: _estiloTexto),
+            Text("Numeros de clicks: ", style:  estiloTexto),
+            Text("$contador", style: estiloTexto),
           ]
         ),
       ),
